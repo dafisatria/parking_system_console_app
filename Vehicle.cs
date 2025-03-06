@@ -3,16 +3,9 @@ public enum VehicleType
     Mobil,
     Motor
 }
-public class Vehicle
+public class Vehicle(String plateNumber, String color, VehicleType type)
 {
-    public string plateNumber;
-    public string color;
-    public VehicleType type;
-
-    public Vehicle(String plateNumber, String color, VehicleType type)
-    {
-        this.plateNumber = plateNumber;
-        this.color = color;
-        this.type = type;
-    }
+    public string plateNumber = plateNumber;
+    public string color = color;
+    public VehicleType type = type;
 }

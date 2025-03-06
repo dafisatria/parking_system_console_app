@@ -12,3 +12,4 @@
 /Users/dafisatria/Documents/enigma/Parking System/ParkingSystem/obj/Debug/net9.0/ParkingSystem.pdb
 /Users/dafisatria/Documents/enigma/Parking System/ParkingSystem/obj/Debug/net9.0/ParkingSystem.genruntimeconfig.cache
 /Users/dafisatria/Documents/enigma/Parking System/ParkingSystem/obj/Debug/net9.0/ref/ParkingSystem.dll
+/Users/dafisatria/Documents/enigma/Parking System/ParkingSystem/obj/Debug/net9.0/ParkingSystem.sourcelink.json

@@ -1,17 +1,13 @@
-class ParkingLot
+class ParkingLot(int total)
 {
-    public int totalLots;
-    public Dictionary<int, Vehicle> lots = new();
-    public ParkingLot(int total)
-    {
-        totalLots = total;
-        System.Console.WriteLine("Created a parking lot with " + totalLots + " slots");
-    }
+    public int totalLots = total;
+    public Dictionary<int, Vehicle> lots = [];
+
     public void CheckIn(Vehicle vehicle)
     {
         if (lots.Count >= totalLots)
         {
-            System.Console.WriteLine("Sorry, parking lot is full");
+            System.Console.WriteLine("Sorry, parking lot is full\n");
             return;
         }
         for (int i = 1; i <= totalLots; i++)
@@ -19,7 +15,7 @@ class ParkingLot
             if (!lots.ContainsKey(i))
             {
                 lots[i] = vehicle;
-                System.Console.WriteLine("Allocated slot number: " + i);
+                System.Console.WriteLine("Allocated slot number: " + i+"\n");
                 return;
             }
         }
@@ -30,11 +26,11 @@ class ParkingLot
         if (lots.ContainsKey(slotNumber))
         {
             lots.Remove(slotNumber);
-            System.Console.WriteLine("Slot number " + slotNumber + " is free");
+            System.Console.WriteLine("Slot number " + slotNumber + " is free\n");
         }
         else
         {
-            Console.WriteLine("Slot not found");
+            Console.WriteLine("Slot not found\n");
         }
     }
 
@@ -43,13 +39,13 @@ class ParkingLot
         System.Console.WriteLine("Slot\tNo.\t\tType\tRegistration No Colour");
         foreach (var vehicle in lots)
         {
-            System.Console.WriteLine(vehicle.Key + "\t" + vehicle.Value.plateNumber + "\t" + vehicle.Value.type + "\t" + vehicle.Value.color);
+            System.Console.WriteLine(vehicle.Key + "\t" + vehicle.Value.plateNumber + "\t" + vehicle.Value.type + "\t" + vehicle.Value.color+"\n");
         }
     }
 
     public void CountVehiclesByType(VehicleType type)
     {
-        System.Console.WriteLine(lots.Values.Count(vehicle => vehicle.type == type));
+        System.Console.WriteLine(lots.Values.Count(vehicle => vehicle.type == type)+"\n");
     }
 
     public void SortPlateNumberByOdd()
@@ -73,10 +69,11 @@ class ParkingLot
             {
                 System.Console.WriteLine(plateNumber);
             }
+            System.Console.WriteLine();
         }
         else
         {
-            System.Console.WriteLine("Not found");
+            System.Console.WriteLine("Not found\n");
         }
     }
     public void SortPlateNumberByEvent()
@@ -100,10 +97,11 @@ class ParkingLot
             {
                 System.Console.WriteLine(plateNumber);
             }
+            System.Console.WriteLine();
         }
         else
         {
-            System.Console.WriteLine("Not found");
+            System.Console.WriteLine("Not found\n");
         }
     }
     public void SortPlateNumberByColor(string color)
@@ -123,10 +121,11 @@ class ParkingLot
             {
                 System.Console.WriteLine(plateNumber);
             }
+            System.Console.WriteLine();
         }
         else
         {
-            System.Console.WriteLine("Not found");
+            System.Console.WriteLine("Not found\n");
         }
     }
     public void SortSlotByColor(string color)
@@ -146,10 +145,11 @@ class ParkingLot
             {
                 System.Console.WriteLine(slotNumber);
             }
+            System.Console.WriteLine();
         }
         else
         {
-            System.Console.WriteLine("Not found");
+            System.Console.WriteLine("Not found\n");
         }
     }
     public void SearchSlotByPlateNumber(string plateNumber)
@@ -163,10 +163,11 @@ class ParkingLot
                 found = true;
                 break;
             }
+            System.Console.WriteLine();
         }
         if (!found)
         {
-            System.Console.WriteLine("Not Found");
+            System.Console.WriteLine("Not Found\n");
         }
     }
 }
