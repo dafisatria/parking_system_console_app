@@ -1,0 +1,14 @@
+/Users/dafisatria/Documents/enigma/Parking System/ParkingSystem/bin/Debug/net9.0/ParkingSystem
+/Users/dafisatria/Documents/enigma/Parking System/ParkingSystem/bin/Debug/net9.0/ParkingSystem.deps.json
+/Users/dafisatria/Documents/enigma/Parking System/ParkingSystem/bin/Debug/net9.0/ParkingSystem.runtimeconfig.json
+/Users/dafisatria/Documents/enigma/Parking System/ParkingSystem/bin/Debug/net9.0/ParkingSystem.dll
+/Users/dafisatria/Documents/enigma/Parking System/ParkingSystem/bin/Debug/net9.0/ParkingSystem.pdb
+/Users/dafisatria/Documents/enigma/Parking System/ParkingSystem/obj/Debug/net9.0/ParkingSystem.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dafisatria/Documents/enigma/Parking System/ParkingSystem/obj/Debug/net9.0/ParkingSystem.AssemblyInfoInputs.cache
+/Users/dafisatria/Documents/enigma/Parking System/ParkingSystem/obj/Debug/net9.0/ParkingSystem.AssemblyInfo.cs
+/Users/dafisatria/Documents/enigma/Parking System/ParkingSystem/obj/Debug/net9.0/ParkingSystem.csproj.CoreCompileInputs.cache
+/Users/dafisatria/Documents/enigma/Parking System/ParkingSystem/obj/Debug/net9.0/ParkingSystem.dll
+/Users/dafisatria/Documents/enigma/Parking System/ParkingSystem/obj/Debug/net9.0/refint/ParkingSystem.dll
+/Users/dafisatria/Documents/enigma/Parking System/ParkingSystem/obj/Debug/net9.0/ParkingSystem.pdb
+/Users/dafisatria/Documents/enigma/Parking System/ParkingSystem/obj/Debug/net9.0/ParkingSystem.genruntimeconfig.cache
+/Users/dafisatria/Documents/enigma/Parking System/ParkingSystem/obj/Debug/net9.0/ref/ParkingSystem.dll
