@@ -1,11 +1,7 @@
-public enum VehicleType
-{
-    Mobil,
-    Motor
-}
-public class Vehicle(String plateNumber, String color, VehicleType type)
+
+public class Vehicle(String plateNumber, String color, String type)
 {
     public string plateNumber = plateNumber;
     public string color = color;
-    public VehicleType type = type;
+    public string type = type;
 }

@@ -10,12 +10,17 @@ class ParkingLot(int total)
             System.Console.WriteLine("Sorry, parking lot is full\n");
             return;
         }
+        if (!string.Equals(vehicle.type, "mobil", StringComparison.OrdinalIgnoreCase) && !string.Equals(vehicle.type, "motor", StringComparison.Ordinal))
+        {
+            System.Console.WriteLine("Sorry, only car and motorcycle can parking here\n");
+            return;
+        }
         for (int i = 1; i <= totalLots; i++)
         {
             if (!lots.ContainsKey(i))
             {
                 lots[i] = vehicle;
-                System.Console.WriteLine("Allocated slot number: " + i+"\n");
+                System.Console.WriteLine("Allocated slot number: " + i + "\n");
                 return;
             }
         }
@@ -25,6 +30,10 @@ class ParkingLot(int total)
     {
         if (lots.ContainsKey(slotNumber))
         {
+            System.Console.Write("Enter duration: ");
+            int duration = int.Parse(Console.ReadLine());
+            duration *= 5000;
+            System.Console.WriteLine("Parking fee: "+duration);
             lots.Remove(slotNumber);
             System.Console.WriteLine("Slot number " + slotNumber + " is free\n");
         }
@@ -39,13 +48,22 @@ class ParkingLot(int total)
         System.Console.WriteLine("Slot\tNo.\t\tType\tRegistration No Colour");
         foreach (var vehicle in lots)
         {
-            System.Console.WriteLine(vehicle.Key + "\t" + vehicle.Value.plateNumber + "\t" + vehicle.Value.type + "\t" + vehicle.Value.color+"\n");
+            System.Console.WriteLine(vehicle.Key + "\t" + vehicle.Value.plateNumber + "\t" + vehicle.Value.type + "\t" + vehicle.Value.color + "\n");
         }
     }
 
-    public void CountVehiclesByType(VehicleType type)
+    public void CountVehiclesByType(string type)
     {
-        System.Console.WriteLine(lots.Values.Count(vehicle => vehicle.type == type)+"\n");
+        if (!string.Equals(type, "mobil", StringComparison.OrdinalIgnoreCase) && !string.Equals(type, "motor", StringComparison.Ordinal))
+        {
+            System.Console.WriteLine("Sorry, only car and motorcycle can parking here\n");
+            return;
+        }
+        else
+        {
+            System.Console.WriteLine(lots.Values.Count(vehicle => vehicle.type == type) + "\n");
+        }
+
     }
 
     public void SortPlateNumberByOdd()

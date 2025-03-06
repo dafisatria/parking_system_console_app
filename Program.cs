@@ -35,7 +35,7 @@
                     string[] data = vehicle.Split(' ');
                     if (parkingLot != null)
                     {
-                        parkingLot?.CheckIn(new Vehicle(data[0], data[1], Enum.Parse<VehicleType>(data[2], true)));
+                        parkingLot?.CheckIn(new Vehicle(data[0], data[1], data[2]));
                     }
                     else
                     {
@@ -61,7 +61,7 @@
                     System.Console.Write("type_of_vehicles ");
                     if (parkingLot != null)
                     {
-                    parkingLot.CountVehiclesByType(Enum.Parse<VehicleType>(Console.ReadLine()));
+                    parkingLot.CountVehiclesByType(Console.ReadLine());
                     }
                     else
                     {
